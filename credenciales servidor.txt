@@ -1,0 +1,9 @@
+nombre del servidor: jjdevpr.database.windows.net
+username: jjdevpr
+pw: 4Hg[C3?MY"3p<"me
+
+
+--------------spring
+
+username: spring
+pw: 99081701349Da*

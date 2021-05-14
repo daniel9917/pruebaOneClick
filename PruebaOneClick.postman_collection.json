@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "0a1a230a-c76f-4a91-ad56-8a4f64f92d3f",
+		"name": "PruebaOneClick",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AutorRequests",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/autor/find",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"autor",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"jose\",\r\n    \"fecha_nacimiento\" : \"17/08/1999\",\r\n    \"ciudad_procedencia\" : \"bogotá\",\r\n    \"correo\" : \"daniel.jose.45@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/autor/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"autor",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EditorialRequests",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/editorial/find",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"editorial",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"babel\",\r\n    \"direccion\" : \"Calle 39 A 20 - 55\",\r\n    \"correo\" : \"editorial@babellibros.com.co\",\r\n    \"telefono\" : \"245 8495\",\r\n    \"max_libros\" : 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/editorial/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"editorial",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LibroRequests",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"fefe\",\r\n    \"ano\" : \"2021\",\r\n    \"genero\" : \"comedia\",\r\n    \"n_paginas\" : 5000,\r\n    \"id_editorial\" : 0,\r\n    \"id_autor\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/libro/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"libro",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
